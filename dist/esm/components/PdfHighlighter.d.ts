@@ -26,6 +26,10 @@ export interface PdfHighlighterProps {
      */
     pdfScaleValue?: PdfScaleValue;
     /**
+     * What page number to render the PDF at inside the viewer.
+     */
+    pdfPageNumber?: number;
+    /**
      * Callback triggered whenever a user finishes making a mouse selection or has
      * selected text.
      *
@@ -99,4 +103,4 @@ export interface PdfHighlighterProps {
  *
  * @category Component
  */
-export declare const PdfHighlighter: ({ highlights, onScrollAway, pdfScaleValue, onSelection: onSelectionFinished, onCreateGhostHighlight, onRemoveGhostHighlight, selectionTip, enableAreaSelection, mouseSelectionStyle, pdfDocument, children, textSelectionColor, utilsRef, style, }: PdfHighlighterProps) => React.JSX.Element;
+export declare const PdfHighlighter: ({ highlights, onScrollAway, pdfScaleValue, pdfPageNumber, onSelection: onSelectionFinished, onCreateGhostHighlight, onRemoveGhostHighlight, selectionTip, enableAreaSelection, mouseSelectionStyle, pdfDocument, children, textSelectionColor, utilsRef, style, }: PdfHighlighterProps) => React.JSX.Element;
